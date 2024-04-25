@@ -1,15 +1,16 @@
 
 import './App.css';
-import Aboutus from './components/Aboutus';
-import Menuu from './components/Menuu';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutContent from './components/AboutContent';
+
+
+
 
 function App() {
   return (
     <div className="App">
 
-<Aboutus/>
-  <Menuu/>
-
+<AboutContent/>
     </div>
 
   );
