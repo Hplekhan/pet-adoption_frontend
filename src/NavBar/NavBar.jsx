@@ -45,7 +45,7 @@ const NavBar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/portfolio" style={{ fontFamily: 'Copperplate' }}>
+                                <Link className="nav-link" to="/pets-list" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>List a Pet</b></small>
                                 </Link>
                             </li>
@@ -61,6 +61,11 @@ const NavBar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/about" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>About Us</b></small>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/" style={{ fontFamily: 'Copperplate' }}>
+                                    <small><b>Contact</b></small>
                                 </Link>
                             </li>
                             <li className="nav-item">

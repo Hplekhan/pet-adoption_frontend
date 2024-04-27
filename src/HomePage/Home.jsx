@@ -10,6 +10,10 @@ import { IconButton } from '@mui/material';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import PetsIcon from '@mui/icons-material/Pets';
 import CheckIcon from '@mui/icons-material/Check';
+import { Container, Row, Col } from 'react-bootstrap';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 
@@ -64,7 +68,7 @@ function Home() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/portfolio" style={{ fontFamily: 'Copperplate' }}>
+                                <Link className="nav-link" to="pets-list" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>List a Pet</b></small>
                                 </Link>
                             </li>
@@ -80,6 +84,12 @@ function Home() {
                             <li className="nav-item">
                                 <Link className="nav-link" to="about" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>About Us</b></small>
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="" style={{ fontFamily: 'Copperplate' }}>
+                                    <small><b>Contact</b></small>
                                 </Link>
                             </li>
                             <li className="nav-item">
@@ -257,54 +267,102 @@ function Home() {
                 <p style={{ fontFamily: 'Copperplate' }}><small>Whilst you can use our filters to search for specific pets, we thought you'd like to try these popular pet searches!</small></p>
             </div>
 
-            {/* Large and small cards */}
 
-            <div className="new-container" style={{ backgroundColor: '', padding: '20px' }}>
-                <h2 className="text-center" style={{ fontFamily: 'Copperplate', marginBottom: '20px' }}><b>Featured Pets </b></h2>
+            {/* Large and small cards */}
+            <div className="new-container mt-1" style={{ backgroundColor: '', padding: '20px' }}>
+                <h2 className="text-center" style={{ fontFamily: 'Copperplate', marginBottom: '20px' }}></h2>
 
                 <div className="row">
                     {/* Large card */}
                     <div className="col-md-8">
-                        <div className="card-1" style={{ backgroundColor: '#DBE2E9', marginBottom: '20px', borderRadius: '15px' }}>
+                        <div className="card-1 " style={{ backgroundColor: '#DBE2E9', marginBottom: '20px', borderRadius: '15px' }}>
                             <div style={{ padding: '20px' }}>
-                                <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '90%', height: '540px', borderRadius: '10px' }} />
+                                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nfGVufDB8fDB8fHww" className="card-img-top mx-auto d-block zoom-on-hover " alt="Card Image" style={{ width: '80%', height: '500px', borderRadius: '10px' }} />
                             </div>
                             <div className="card-body">
-                                <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Yorkshire terrier</h4></p>
-                                <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small>Available Soon..</small></p>
+                                <p className="card-text mb-3" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Goldenretriever</h4></p>
+                                <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small></small></p>
                             </div>
                         </div>
                     </div>
                     {/* Small card */}
                     <div className="col-md-4">
-                        <div className="card-1" style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
+                        {/* small card -1 */}
+                        <div className="card-1 " style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
                             <div style={{ padding: '20px' }}>
-                                <img src="https://plus.unsplash.com/premium_photo-1663127046003-ef3ec7ce7bc4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNtYWxsJTIwY2F0c3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '100%', height: 'auto', borderRadius: '10px' }} />
+                                <img src="https://media.istockphoto.com/id/1500079921/photo/close-up-portrait-of-her-she-nice-looking-attractive-sweet-lovely-charming-cute-cheerful.jpg?s=612x612&w=0&k=20&c=EHg98GB9BMsr-FkJBnQxCN4j6R8Gv0aCo7zAM7P0RoE=" className="card-img-top mx-auto d-block zoom-on-hover" alt="Small Card-Image" style={{ width: '100%', height: '200px', borderRadius: '10px' }} />
                             </div>
                             <div className="card-body">
-                                <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Whisker</h4></p>
-                                <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small>Available Soon..</small></p>
+                                <p className="card-text mb-2" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Orange Cat</h4></p>
+                                <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small></small></p>
                             </div>
                         </div>
-                      
-                            <div className="card-1" style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
-                                <div style={{ padding: '20px' }}>
-                                    <img src="https://plus.unsplash.com/premium_photo-1663127046003-ef3ec7ce7bc4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNtYWxsJTIwY2F0c3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '100%', height: 'auto', borderRadius: '10px' }} />
-                                </div>
-                                <div className="card-body">
-                                    <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Whisker</h4></p>
-                                    <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small>Available Soon..</small></p>
-                                </div>
+                        {/*  small card-2 */}
+                        <div className="card-3 " style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
+                            <div style={{ padding: '20px' }}>
+                                <img src="https://images.unsplash.com/photo-1589952283406-b53a7d1347e8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFiYml0fGVufDB8fDB8fHww" className="card-img-top mx-auto d-block text-center mt-2 zoom-on-hover" alt="Small Card-Image" style={{ width: '100%', height: '200px', borderRadius: '10px' }} />
                             </div>
-                       
+                            <div className="card-body">
+                                <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Rabbits</h4></p>
+                                <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small></small></p>
+                            </div>
+                        </div>
                     </div>
-
-                </div >
+                </div>
             </div>
+
+
+            {/* Footer */}
+            <div className="footer-container" style={{ backgroundColor: '#DBE2E9', padding: '20px' }}>
+                <h2 className="text-center" style={{ fontFamily: 'Copperplate', marginBottom: '20px', fontFamily: 'Copperplate' }}></h2>
+
+                {/* About Us */}
+                <div className="footer-container">
+                    <Container>
+                        <Row className="justify-content-around">
+                            {/* About Us */}
+                            <Col style={{ fontFamily: 'Copperplate' }} className='mb-4'>
+                                <h3>About Us</h3>
+                                <small>Online pet adoption platforms provide a convenient and accessible way for individuals and families to find their perfect animal companions. These platforms typically feature profiles of pets available for adoption, including details about their age, breed, temperament, and any special needs they may have. Users can browse through these profiles from the comfort of their own homes, allowing them to carefully consider their options before making a decision.</small>
+                            </Col>
+
+                            {/* Quick Links */}
+                            <Col style={{ fontFamily: 'Copperplate' }} className='mb-4 text-center'>
+                                <h3>Quick Links</h3>
+                                <ul className="list-unstyled">
+                                    <li><a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>Home</a></li>
+                                    <li><a href="#login" style={{ textDecoration: 'none', color: 'inherit' }}>Adopt</a></li>
+                                    <li><a href="#pets-list" style={{ textDecoration: 'none', color: 'inherit' }}>Pets List</a></li>
+                                    <li><a href="#conatct" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</a></li>
+                                </ul>
+                            </Col>
+
+                            {/* Social Media Icons */}
+                            <Col style={{ fontFamily: 'Copperplate' }} className='mb-4 text-center'>
+                                <h3>Follow Us</h3>
+                                <div className="icons">
+                                    <a href="#" className="mr-3"> <InstagramIcon /> </a>
+                                    <a href="#" className="mr-3"> <TwitterIcon /> </a>
+                                    <a href="#" className='mr-3'> <FacebookIcon /> </a>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        {/* Copyright */}
+                        <Row>
+                            <Col>
+                                <p className="text-center">
+                                    <small>© 2024 Copyright - PetAdoption</small>
+                                </p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+
+            </div>
+
+
         </div>
-
-
-
     );
 }
 
