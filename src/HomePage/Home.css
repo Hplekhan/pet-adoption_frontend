@@ -41,7 +41,7 @@
   margin-right: 20px;
   width: 30px;
   height: 30px;
-  color: rgb(213, 223, 232);
+  color: #fdf5e2;
 }
 
 .content {
@@ -89,6 +89,12 @@ section {
 .card:hover {
   transform: scale(1.1); 
 }
+
+.zoom-on-hover:hover {
+  transform: scale(1.05); /* adjust the scale factor as needed */
+  transition: transform 0.2s ease; /* add smooth transition */
+}
+
 
 
 
