@@ -144,8 +144,6 @@ function Home() {
             </div>
 
 
-
-
             {/* Contrainer */}
             <div className="new-container" style={{ backgroundColor: '#DBE2E9', padding: '20px' }}>
                 <h2 className="text-center" style={{ fontFamily: 'Copperplate', marginBottom: '20px', fontFamily: 'Copperplate' }}><b>Featured Pets </b></h2>
@@ -259,79 +257,47 @@ function Home() {
                 <p style={{ fontFamily: 'Copperplate' }}><small>Whilst you can use our filters to search for specific pets, we thought you'd like to try these popular pet searches!</small></p>
             </div>
 
-        {/* Large and small cards */}
+            {/* Large and small cards */}
 
-            <div className="new-container" style={{ backgroundColor: '#DBE2E9', padding: '20px' }}>
+            <div className="new-container" style={{ backgroundColor: '', padding: '20px' }}>
                 <h2 className="text-center" style={{ fontFamily: 'Copperplate', marginBottom: '20px' }}><b>Featured Pets </b></h2>
 
                 <div className="row">
                     {/* Large card */}
                     <div className="col-md-8">
-                        <div className="card-1" style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
+                        <div className="card-1" style={{ backgroundColor: '#DBE2E9', marginBottom: '20px', borderRadius: '15px' }}>
                             <div style={{ padding: '20px' }}>
-                                <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '90%', height: '500px', borderRadius: '15px' }} />
+                                <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '90%', height: '540px', borderRadius: '10px' }} />
                             </div>
                             <div className="card-body">
                                 <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Yorkshire terrier</h4></p>
                                 <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small>Available Soon..</small></p>
                             </div>
-                            <IconButton
-                                aria-label="like"
-                                style={{
-                                    position: 'absolute',
-                                    bottom: '5px',
-                                    right: '5px',
-                                    backgroundColor: '#fff',
-                                    '&:hover': {
-                                        backgroundColor: 'transparent',
-                                    },
-                                    '&:hover svg': {
-                                        color: 'red'
-                                    }
-                                }}
-                                onClick={handleClick}
-                            >
-                                {isFavorite ? <CheckIcon /> : <FavoriteBorderIcon />}
-                            </IconButton>
                         </div>
                     </div>
                     {/* Small card */}
                     <div className="col-md-4">
                         <div className="card-1" style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
                             <div style={{ padding: '20px' }}>
-                                <img src="https://plus.unsplash.com/premium_photo-1663127046003-ef3ec7ce7bc4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNtYWxsJTIwY2F0c3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '100%', height: 'auto', borderRadius: '15px' }} />
+                                <img src="https://plus.unsplash.com/premium_photo-1663127046003-ef3ec7ce7bc4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNtYWxsJTIwY2F0c3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '100%', height: 'auto', borderRadius: '10px' }} />
                             </div>
                             <div className="card-body">
                                 <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Whisker</h4></p>
                                 <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small>Available Soon..</small></p>
                             </div>
-                            <IconButton
-                                aria-label="like"
-                                style={{
-                                    position: 'absolute',
-                                    bottom: '5px',
-                                    right: '5px',
-                                    backgroundColor: '#fff',
-                                    '&:hover': {
-                                        backgroundColor: 'transparent',
-                                    },
-                                    '&:hover svg': {
-                                        color: 'red'
-                                    }
-                                }}
-                                onClick={handleClick}
-                            >
-                                {isFavorite ? <CheckIcon /> : <FavoriteBorderIcon />}
-                            </IconButton>
                         </div>
+                      
+                            <div className="card-1" style={{ backgroundColor: '#fdf5e2', marginBottom: '20px', borderRadius: '15px' }}>
+                                <div style={{ padding: '20px' }}>
+                                    <img src="https://plus.unsplash.com/premium_photo-1663127046003-ef3ec7ce7bc4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNtYWxsJTIwY2F0c3xlbnwwfHwwfHx8MA%3D%3D" className="card-img-top mx-auto d-block" alt="Card Image" style={{ width: '100%', height: 'auto', borderRadius: '10px' }} />
+                                </div>
+                                <div className="card-body">
+                                    <p className="card-text mb-1" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><h4><PetsIcon />Whisker</h4></p>
+                                    <p className="card-text" style={{ fontFamily: 'Copperplate', textAlign: 'center' }}><small>Available Soon..</small></p>
+                                </div>
+                            </div>
+                       
                     </div>
-
-
-
-
-
-
-
 
                 </div >
             </div>

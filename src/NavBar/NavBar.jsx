@@ -20,7 +20,7 @@ const NavBar = () => {
                             height="70px"
                             className="d-inline-block align-top"
                             alt="Brand Logo"
-                            style={{ objectFit: "fill", marginLeft: "60px" }} // Added marginLeft
+                            style={{ objectFit: "fill", marginLeft: "60px" }}
                         />
                     </Link>
                     <button
@@ -38,7 +38,7 @@ const NavBar = () => {
                         className="collapse navbar-collapse col-12 d-flex justify-content-center"
                         id="navbarNav"
                     >
-                        <ul className="navbar-nav ml-auto"> {/* Added ml-auto class */}
+                        <ul className="navbar-nav ml-auto"> 
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="/" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>Home</b></small>
