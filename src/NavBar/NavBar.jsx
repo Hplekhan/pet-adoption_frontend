@@ -10,7 +10,7 @@ const NavBar = () => {
             <nav
                 className="navbar navbar-expand-lg text-center sticky-top "
                 id="nav-custom"
-                style={{ backgroundColor: "", height: "80px" }} // #E6E6E6
+                style={{ backgroundColor: "white", height: "80px" }} // #E6E6E6
             >
                 <div className="container-fluid mr-auto">
                     <Link href="#home" className='ml-auto'>
@@ -64,12 +64,12 @@ const NavBar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/" style={{ fontFamily: 'Copperplate' }}>
+                                <Link className="nav-link" to="" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>Contact</b></small>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#" style={{ fontFamily: 'Copperplate' }}><Person />
+                                <Link className="nav-link" to="/login" style={{ fontFamily: 'Copperplate' }}><Person />
                                     <small><b>LoginIn/Register</b></small>
                                 </Link>
                             </li>

@@ -93,7 +93,7 @@ function Home() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#" style={{ fontFamily: 'Copperplate' }}><Person />
+                                <Link className="nav-link" to="/login" style={{ fontFamily: 'Copperplate' }}><Person />
                                     <small><b>LoginIn/Register</b></small>
                                 </Link>
                             </li>

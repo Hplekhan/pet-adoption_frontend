@@ -29,7 +29,7 @@ const Cards = () => {
                 <div className="col-md-4">
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <div className="card">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaqKW_fomC27szSDf43ncEI6DmPhr8Rna6AFK9lmyuqpZcehijT3FMDbQaKDM62ZlL1Ko&usqp=CAU" className="rounded-top img-fluid mx-auto d-block mt-2" alt="pet-cards-img" style={{ height: '150px', width: 'auto' }} />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsd322uEZECEYuPKwJl-upP4DsbEH5M7_6xwzGQX1zwimKd5L-cS8vKhzHManRNKZIPU&usqp=CAU" className="rounded-top img-fluid mx-auto d-block mt-2" alt="pet-cards-img" style={{ height: '150px', width: 'auto' }} />
                             <div className="card-body">
                                 <p className="card-text text-center mb-1" style={{ fontFamily: 'Copperplate' }}><h4>Kind  Everyone </h4></p>
                                 <p className="card-text text-center" style={{ fontFamily: 'Copperplate' }}><small>We believe that...</small></p>
