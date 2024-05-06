@@ -10,10 +10,11 @@ import { IconButton } from '@mui/material';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import PetsIcon from '@mui/icons-material/Pets';
 import CheckIcon from '@mui/icons-material/Check';
-import { Container, Row, Col } from 'react-bootstrap';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import Footer from '../Footer/Footer';
+import { NavLink } from 'react-router-dom';
+import brand_logo from '../../src/assests/logo.png'
+
+
 
 
 
@@ -38,12 +39,12 @@ function Home() {
                 <div className="container-fluid mr-auto">
                     <Link href="#home" className='ml-auto'>
                         <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEQbU5aMvGET8rRFSZkQcGrZutBf1CMRAFslJ7878DQ&s"
-                            width="100px"
-                            height="70px"
+                            src={brand_logo}
+                            width="450%"
+                            height="350%"
                             className="d-inline-block align-top"
                             alt="Brand Logo"
-                            style={{ objectFit: "fill", marginLeft: "60px" }} // Added marginLeft
+                            style={{ objectFit: "fill", marginLeft: "60px" }} 
                         />
                     </Link>
                     <button
@@ -74,24 +75,23 @@ function Home() {
                             </li>
                             <li className="nav-item">
                                 <NavDropdown title={<small><b>Help and Advive</b></small>} id="basic-nav-dropdown" style={{ fontFamily: 'Copperplate' }}>
-                                    <NavDropdown.Item href="#action/3.1">Action 1</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Action 2</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Action 3</NavDropdown.Item>
-                                    <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                    <NavLink className="dropdown-item" to="/faq">FAQ</NavLink>
+                                    <NavLink className="dropdown-item" to="/petcareinfo">Pet care information</NavLink>
+                                    <NavLink className="dropdown-item" to="/contact">Contact</NavLink>
+                                    
                                 </NavDropdown>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="about" style={{ fontFamily: 'Copperplate' }}>
+                                <Link className="nav-link" to="/aboutus" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>About Us</b></small>
                                 </Link>
                             </li>
 
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" to="" style={{ fontFamily: 'Copperplate' }}>
                                     <small><b>Contact</b></small>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Link className="nav-link" to="/login" style={{ fontFamily: 'Copperplate' }}><Person />
                                     <small><b>LoginIn/Register</b></small>
@@ -134,7 +134,7 @@ function Home() {
                             </div>
                         </div>
                         <div className='col-lg-4 text-right mt-3' id='btn-color'>
-                            <a className='btn custom-button' style={{ backgroundColor: '#a58e7d', color: "white", fontFamily: 'Copperplate' }} href='/register/' onMouseOver={() => { }}>Register</a>
+                            <a className='btn custom-button' style={{ backgroundColor: 'lightblue', color: "white", fontFamily: 'Copperplate' }} href='/register/' onMouseOver={() => { }}>Register</a>
                         </div>
                     </div>
                 </div>
@@ -313,53 +313,7 @@ function Home() {
 
 
             {/* Footer */}
-            <div className="footer-container" style={{ backgroundColor: '#DBE2E9', padding: '20px' }}>
-                <h2 className="text-center" style={{ fontFamily: 'Copperplate', marginBottom: '20px', fontFamily: 'Copperplate' }}></h2>
-
-                {/* About Us */}
-                <div className="footer-container">
-                    <Container>
-                        <Row className="justify-content-around">
-                            {/* About Us */}
-                            <Col style={{ fontFamily: 'Copperplate' }} className='mb-4'>
-                                <h3>About Us</h3>
-                                <small>Online pet adoption platforms provide a convenient and accessible way for individuals and families to find their perfect animal companions. These platforms typically feature profiles of pets available for adoption, including details about their age, breed, temperament, and any special needs they may have. Users can browse through these profiles from the comfort of their own homes, allowing them to carefully consider their options before making a decision.</small>
-                            </Col>
-
-                            {/* Quick Links */}
-                            <Col style={{ fontFamily: 'Copperplate' }} className='mb-4 text-center'>
-                                <h3>Quick Links</h3>
-                                <ul className="list-unstyled">
-                                    <li><a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>Home</a></li>
-                                    <li><a href="#login" style={{ textDecoration: 'none', color: 'inherit' }}>Adopt</a></li>
-                                    <li><a href="#pets-list" style={{ textDecoration: 'none', color: 'inherit' }}>Pets List</a></li>
-                                    <li><a href="#conatct" style={{ textDecoration: 'none', color: 'inherit' }}>Contact</a></li>
-                                </ul>
-                            </Col>
-
-                            {/* Social Media Icons */}
-                            <Col style={{ fontFamily: 'Copperplate' }} className='mb-4 text-center'>
-                                <h3>Follow Us</h3>
-                                <div className="icons">
-                                    <a href="#" className="mr-3"> <InstagramIcon /> </a>
-                                    <a href="#" className="mr-3"> <TwitterIcon /> </a>
-                                    <a href="#" className='mr-3'> <FacebookIcon /> </a>
-                                </div>
-                            </Col>
-                        </Row>
-
-                        {/* Copyright */}
-                        <Row>
-                            <Col>
-                                <p className="text-center">
-                                    <small>© 2024 Copyright - PetAdoption</small>
-                                </p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-
-            </div>
+            <Footer />
 
 
         </div>

@@ -7,7 +7,7 @@ const Cards = () => {
         // {/* CARD-1 */}
         <div className="container">
             <div className="row justify-content-center mt-5">
-                <div className="col-md-4">
+                <div className="col-md-4 shadow">
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <div className="card">
                             <img src="https://www.shutterstock.com/image-vector/icon-illustration-concept-family-care-600nw-1077028331.jpg" className="rounded-top img-fluid mx-auto d-block mt-2" alt="kind-cards-img" style={{ height: '150px', width: 'auto' }} />
@@ -26,7 +26,7 @@ const Cards = () => {
                 </div>
 
                 {/* CARD-2 */}
-                <div className="col-md-4">
+                <div className="col-md-4 shadow">
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <div className="card">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsd322uEZECEYuPKwJl-upP4DsbEH5M7_6xwzGQX1zwimKd5L-cS8vKhzHManRNKZIPU&usqp=CAU" className="rounded-top img-fluid mx-auto d-block mt-2" alt="pet-cards-img" style={{ height: '150px', width: 'auto' }} />
@@ -44,7 +44,7 @@ const Cards = () => {
                     </Link>
                 </div>
                 {/* CARD-3 */}
-                <div className="col-md-4">
+                <div className="col-md-4 shadow">
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <div className="card" style={{ transition: 'transform 0.3s' }}>
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/007/636/859/small/community-logo-design-free-vector.jpg" className="rounded-top img-fluid mx-auto d-block mt-2" alt="community-cards-img" style={{ height: '150px', width: 'auto' }} />
